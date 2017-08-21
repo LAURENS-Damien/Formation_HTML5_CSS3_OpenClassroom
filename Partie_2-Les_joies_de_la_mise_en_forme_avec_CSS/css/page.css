@@ -1,0 +1,60 @@
+/* On peut télécharger de nouvelles polices (par exemple sur le site "www.fontsquirrel.com") et les utiliser
+ensuite dans l'appli */
+/* On insère le code présent dans le fichier stylesheet.css */
+@font-face {
+    font-family: 'ambleregular';
+    src: url('../fonts/amble/Amble-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+p {
+	font-size: 1.3em; /* Permet de modifier la taille de la police */
+	font-family: 'ambleregular', Impact, "Arial Black", Arial, Verdana, sans-serif; /* Permet de définir le style de police */
+}
+
+p em {
+	font-style: italic; /* Permet de mettre le texte en italique */
+	color: red; /* Permet de modifier la couleur du texte */
+}
+
+em:hover {
+	color: blue; /* Permet de changer la couleur lors du survol de l'élément avec la souris */
+}
+
+p strong {
+	font-weight: bold; /* Permet de mettre le texte en gras */
+	text-decoration: underline  /* Permet de souligner le texte */
+}
+
+h1 {
+	text-align: center; /* Permet de gérer l'alignement du texte (en l'occurence centrer) */
+	opacity: 0.5; /* Permet de jouer avec la transparence */
+	border: 3px blue solid; /* Permet d'ajouter une bordure (en l'occurence bleu de 3px en trait continue) */
+	border-radius: 10px; /* Permet d'arrondir la bordure */
+	box-shadow: 6px 6px 0px black; /* Permet de définir une ombre sur la balise */
+	text-shadow: 6px 6px 6px black; /* Permet de définir une ombre sur le texte */
+}
+
+.imageflottante
+{
+    float: left; /* Permet de faire flotter un élément autour du texte (à gauche d'un texte en l'occurence) */
+}
+.dessous
+{
+    clear: both; /* Permet de faire en sorte que le float du dessus n'impacte pas sur le paragraphe */  
+    background-image: url("../images/image.jpg"); /* Permet de charger une image de fond */  
+}
+
+body {
+	background-color: yellow; /* Permet de modifier la couleur de fond */
+}
+
+input:focus {
+	background-color: red; /* Permet de modifier la couleur de fond lorsque l'élement est sélectionné */
+}
+
+a:visited {
+	color: red; /* Permet de modifier la couleur des liens déjà visités */
+}

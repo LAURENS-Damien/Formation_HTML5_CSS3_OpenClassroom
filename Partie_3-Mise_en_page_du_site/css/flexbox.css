@@ -1,0 +1,93 @@
+#conteneur {
+	width: 1500px;
+	height: 600px;
+	border: 1px solid black;
+	display: flex; /* Permet d'afficher les blocs du conteneur les uns à la suite des autres */
+	flex-direction: row;/* Permet d'agencer dans la direction que l'on veut, verticalement ou horizontalement, inversé ou non */
+	justify-content: space-around; /* Permet de changer l'alignement de l'axe principal */
+	align-items: center; /* Permet de changer l'alignement de l'axe secondaire */
+	flex-wrap: wrap; /* Permet d'envoyer à la ligne des blocs si la taille de la ligne est trop petite */
+	}
+
+.element {
+	width: 450px;
+	height: 300px;
+}
+
+.element:nth-child(1) {
+	background-color: orange;
+}
+
+.element:nth-child(2) {
+	background-color: blue;
+	align-self: flex-end; /* Modifie l'alignement sur l'axe secondaire SEULEMENT sur cet élément */
+}
+
+.element:nth-child(3) {
+	background-color: red;
+}
+
+
+
+#conteneur2 {
+	margin-top: 50px;
+	width: 1400px;
+	height: 1000px;
+	border: 1px solid black;
+	display: flex; /* Permet d'afficher les blocs du conteneur les uns à la suite des autres */
+	flex-wrap: wrap; /* Permet d'envoyer à la ligne des blocs si la taille de la ligne est trop petite */
+	align-content: space-around; /* Permet de gérer l'alignement sur plusieurs lignes */
+	}
+
+.element2 {
+	width: 300px;
+	height: 200px;
+}
+
+.element2:nth-child(1) {
+	background-color: orange;
+}
+
+.element2:nth-child(2) {
+	background-color: blue;
+}
+
+.element2:nth-child(3) {
+	background-color: red;
+}
+
+.element2:nth-child(4) {
+	background-color: yellow;
+}
+
+.element2:nth-child(5) {
+	background-color: orange;
+}
+
+.element2:nth-child(6) {
+	background-color: blue;
+}
+
+.element2:nth-child(7) {
+	background-color: red;
+}
+
+.element2:nth-child(8) {
+	background-color: yellow;
+}
+
+.element2:nth-child(9) {
+	background-color: orange;
+}
+
+.element2:nth-child(10) {
+	background-color: blue;
+}
+
+.element2:nth-child(11) {
+	background-color: red;
+}
+
+.element2:nth-child(12) {
+	background-color: yellow;
+}
